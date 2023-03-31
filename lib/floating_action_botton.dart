@@ -15,7 +15,7 @@ class _FloatingActionButtonViewState extends State<FloatingActionButtonView> {
       body: SafeArea(
         child: Column(
           children: [
-            Text('flaoting action botton'),
+            Text('flaoting'),
           ],
         )
       ),
