@@ -5,6 +5,7 @@ import 'package:learning_app/drawer1.dart';
 import 'package:learning_app/drop_down.dart';
 import 'package:learning_app/floating_action_botton.dart';
 import 'package:learning_app/image_pickup.dart';
+import 'package:learning_app/page_view_lists.dart';
 import 'package:learning_app/time_picker.dart';
 
 
@@ -96,13 +97,18 @@ class _HomeScreen1State extends State<HomeScreen1> {
               ),
               ),
               SizedBox(height: 20,),
-              Container(
-              height: 50, width: 340,
-              decoration: BoxDecoration(
-                color: Colors.blue,
-                borderRadius: BorderRadius.circular(30),
-              ),
-              child: Center(child: Text('Page View',style: TextStyle(fontSize: 18,color: Colors.white),),),
+              InkWell(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => PageViewList1(),));
+                },
+                child: Container(
+                height: 50, width: 340,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                child: Center(child: Text('Page View',style: TextStyle(fontSize: 18,color: Colors.white),),),
+                ),
               ),
               SizedBox(height: 20,),
               InkWell(

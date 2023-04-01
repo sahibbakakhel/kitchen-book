@@ -1,5 +1,7 @@
+
+
 import 'package:flutter/material.dart';
-import 'package:learning_app/custom_widget.dart';
+import 'package:learning_app/myWidget.dart';
 
 class HomeScreen2 extends StatefulWidget {
   const HomeScreen2({super.key});
@@ -47,6 +49,9 @@ class _HomeScreen2State extends State<HomeScreen2> {
                 ),
                 child: Center(child: Text('tab bar',style: TextStyle(fontSize: 20,color: Colors.white),),),
               ),
+
+              
+           
           ],
         ),
       ),
